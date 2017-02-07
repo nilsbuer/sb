@@ -5,3 +5,4 @@ Calculates the commission for selling machines
 and Kitchen stuff
 and car components
 and holiday stuff
+porsche, ferrari

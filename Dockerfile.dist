@@ -1,0 +1,8 @@
+FROM debian:jessie
+
+RUN mkdir -p /app
+ADD sales_data.txt /app/
+ADD build.tar.gz /app/
+WORKDIR /app
+CMD tar -xvzf build.tar.gz
+CMD ./commission 

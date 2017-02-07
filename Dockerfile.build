@@ -1,0 +1,8 @@
+FROM golang:1.4
+
+RUN mkdir -p /tmp/build
+ADD commission.go /tmp/build/
+WORKDIR /tmp/build
+RUN go build commission.go
+
+CMD tar -czf - commission
